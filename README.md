@@ -15,14 +15,14 @@ The fused prediction is `alpha * p_v + (1 - alpha) * p_t`, with a single `alpha`
 pip install -r requirements.txt
 ```
 
-The CLIP weights download automatically from Hugging Face. The PlantCLEF 2024 checkpoint (`model_best.pth.tar`) is available from [Zenodo](https://zenodo.org/records/10848263); we used `[CHECKPOINT NAME]`.
+The CLIP weights download automatically from Hugging Face. The PlantCLEF 2024 ViT-B/14 checkpoint (`model_best.pth.tar`) is available from [Zenodo](https://zenodo.org/records/10848263).
 
 ## Data
 
 - **PlantVillage** (source): https://github.com/spMohanty/PlantVillage-Dataset
 - **PlantDoc** (target): https://github.com/pratikkayal/PlantDoc-Dataset
 
-Both were converted to YOLO format [describe how, or link the converted version you used]. Only the eight classes shared by both datasets are used:
+Both datasets are used in YOLO format. Only the eight classes shared by both datasets are used:
 
 | YOLO id | Class | PlantVillage | PlantDoc |
 |---|---|---|---|
